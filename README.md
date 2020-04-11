@@ -1,6 +1,6 @@
 # Flutter User Preferences
 
-These is a Flutter project that uses the shared preferences to store information to use across the app. It is setted at a settings page.
+This is a Flutter project that uses the shared preferences to store information to use across the app. It is setted at a settings page.
 
 A drawer is implemented in this app and it also implements a Singleton Pattern to use only one instance of the shared preferences.
 
