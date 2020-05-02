@@ -3,6 +3,8 @@ import 'package:user_preferences/src/pages/home_page.dart';
 import 'package:user_preferences/src/pages/settings_page.dart';
 import 'package:user_preferences/src/shared_prefs/user_prefs.dart';
 
+import 'src/pages/about_page.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = new UserPrefs();
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         HomePage.routeName: (BuildContext context) => HomePage(),
         SettingsPage.routeName: (BuildContext context) => SettingsPage(),
+        'about': (BuildContext context) => AboutPage(),
       },
     );
   }

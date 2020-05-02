@@ -14,6 +14,25 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('User Preferences'),
         backgroundColor: (prefs.secondaryColor) ? Colors.teal : Colors.blue,
+        actions: <Widget>[
+          PopupMenuButton(
+            itemBuilder: (BuildContext context) {
+              return [
+                PopupMenuItem(
+                  value: 'about',
+                  child: Text('About'),
+                ),
+              ];
+            },
+            onSelected: (result) {
+              switch (result) {
+                case 'about':
+                  Navigator.pushNamed(context, 'about');
+                  break;
+              }
+            },
+          ),
+        ],
       ),
       drawer: DrawerMenuWidget(),
       body: Column(
